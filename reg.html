@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/AY.png" alt=""></a>
+            <img src="img/bars.png" id="bars" alt="menu">
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="abt.html">ABOUT</a></li>
+                    <li><a href="reg.html">REGISTRATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Registration Form</h1>
+    </section>
+
+    <!-- Registration Field -->
+    <section class="container">
+        <div class="form-box"  id="form1">
+            <div class="step-row">
+                <div id="progress1"></div>
+                <div class="step-col"><small>STEP 1</small></div>
+                <div class="step-col"><small>STEP 2</small></div>
+                <div class="step-col"><small>STEP 3</small></div>
+                <div class="step-col"><small>STEP 4</small></div>
+            </div>
+            <h3>Applicant Information</h3>
+            <form action="#" method="post">
+                <input type="text" id="first1" placeholder="First Name..." required>           
+                <input type="text" id="last1" placeholder="Last Name..." required>
+                <input type="email" id="email1" placeholder="Email..." required>
+                <input type="tel" id="no1" placeholder="Phone Number...">
+                <input type="date" id="date">
+                <input type="number" name="age" id="age" placeholder="Your age...">
+    
+                <div class="btn-box">
+                    <button type="button" id="next1" onclick="return validate()">NEXT</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box"  id="form2">
+            <div class="step-row">
+                <div id="progress2"></div>
+                <div class="step-col"><small>STEP 1</small></div>
+                <div class="step-col"><small>STEP 2</small></div>
+                <div class="step-col"><small>STEP 3</small></div>
+                <div class="step-col"><small>STEP 4</small></div>
+            </div>
+            <h3>Applicant Information</h3>
+            <form action="#" method="post">
+                <select id="gender" required>
+                    <option value="" disabled selected hidden>--select gender--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <textarea name="Address" id="add" rows="2" placeholder="Your address"></textarea>
+                <input type="text" id="city" placeholder="Your city...">
+                <select id="state" required>
+                    <option value="" disabled selected hidden>--select your state--</option>
+                    <option value="abia">Abia</option>
+                    <option value="adamawa">Adamawa</option>
+                    <option value="akwaIbom">Akwa Ibom</option>
+                    <option value="anambra">Anambra</option>
+                    <option value="bauchi">Bauchi</option>
+                    <option value="bayelsa">Bayelsa</option>
+                    <option value="benue">Benue</option>
+                    <option value="borno">Borno</option>
+                    <option value="crossRiver">Cross River</option>
+                    <option value="delta">Delta</option>
+                    <option value="ebonyi">Ebonyi</option>
+                    <option value="edo">Edo</option>
+                    <option value="ekiti">Ekiti</option>
+                    <option value="enugu">Enugu</option>
+                    <option value="fct">FCT</option>
+                    <option value="gombe">Gombe</option>
+                    <option value="imo">Imo</option>
+                    <option value="jigawa">Jigawa</option>
+                    <option value="kaduna">Kaduna</option>
+                    <option value="kano">Kano</option>
+                    <option value="katsina">Katsina</option>
+                    <option value="kebbi">Kebbi</option>
+                    <option value="kogi">Kogi</option>
+                    <option value="kwara">Kwara</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="nasarawa">Nasarawa</option>
+                    <option value="niger">Niger</option>
+                    <option value="ogun">Ogun</option>
+                    <option value="ondo">Ondo</option>
+                    <option value="osun">Osun</option>
+                    <option value="oyo">Oyo</option>
+                    <option value="plateau">Plateau</option>
+                    <option value="rivers">Rivers</option>
+                    <option value="sokoto">Sokoto</option>
+                    <option value="taraba">Taraba</option>
+                    <option value="yobe">Yobe</option>
+                    <option value="zamfara">Zamfara</option>
+                </select>
+                <input type="text" id="country" placeholder="Your country..." required>
+                <input type="text" id="pob" placeholder="Place of birth...">
+
+                <div class="btn-box">
+                    <button type="button" id="back1">BACK</button>
+                    <button type="button" id="next2" onclick="return validate2()">NEXT</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="form-box"  id="form3">
+            <div class="step-row">
+                <div id="progress3"></div>
+                <div class="step-col"><small>STEP 1</small></div>
+                <div class="step-col"><small>STEP 2</small></div>
+                <div class="step-col"><small>STEP 3</small></div>
+                <div class="step-col"><small>STEP 4</small></div>
+            </div>
+            <h3>Parent Information</h3>
+            <form action="#" method="post">
+                <input type="text" id="full" placeholder="Full name of parent..." required>
+                <input type="email" id="email2" placeholder="Email of next of kin..." required>
+                <input type="tel" id="no2" placeholder="Phone number of next of kin..." required>
+                <select id="state2" required>
+                    <option value="" disabled selected hidden>--select your state--</option>
+                    <option value="abia">Abia</option>
+                    <option value="adamawa">Adamawa</option>
+                    <option value="akwaIbom">Akwa Ibom</option>
+                    <option value="anambra">Anambra</option>
+                    <option value="bauchi">Bauchi</option>
+                    <option value="bayelsa">Bayelsa</option>
+                    <option value="benue">Benue</option>
+                    <option value="borno">Borno</option>
+                    <option value="crossRiver">Cross River</option>
+                    <option value="delta">Delta</option>
+                    <option value="ebonyi">Ebonyi</option>
+                    <option value="edo">Edo</option>
+                    <option value="ekiti">Ekiti</option>
+                    <option value="enugu">Enugu</option>
+                    <option value="fct">FCT</option>
+                    <option value="gombe">Gombe</option>
+                    <option value="imo">Imo</option>
+                    <option value="jigawa">Jigawa</option>
+                    <option value="kaduna">Kaduna</option>
+                    <option value="kano">Kano</option>
+                    <option value="katsina">Katsina</option>
+                    <option value="kebbi">Kebbi</option>
+                    <option value="kogi">Kogi</option>
+                    <option value="kwara">Kwara</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="nasarawa">Nasarawa</option>
+                    <option value="niger">Niger</option>
+                    <option value="ogun">Ogun</option>
+                    <option value="ondo">Ondo</option>
+                    <option value="osun">Osun</option>
+                    <option value="oyo">Oyo</option>
+                    <option value="plateau">Plateau</option>
+                    <option value="rivers">Rivers</option>
+                    <option value="sokoto">Sokoto</option>
+                    <option value="taraba">Taraba</option>
+                    <option value="yobe">Yobe</option>
+                    <option value="zamfara">Zamfara</option>
+                </select>
+                <input type="text" id="occ" placeholder="Occupation" required>
+                <textarea name="Address" id="add2" rows="2" placeholder="Your address"></textarea>
+
+                <div class="btn-box">
+                    <button type="button" id="back2">BACK</button>
+                    <button type="submit" id="next3">NEXT</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box"  id="form4">
+            <div class="step-row">
+                <div id="progress4"></div>
+                <div class="step-col"><small>STEP 1</small></div>
+                <div class="step-col"><small>STEP 2</small></div>
+                <div class="step-col"><small>STEP 3</small></div>
+                <div class="step-col"><small>STEP 4</small></div>
+            </div>
+            <h3>Academic Information</h3>
+            <form action="#" method="post">
+                <div class="preview">
+                    <img src="" alt="" id="dummy">
+                </div>
+                <label for="file" class="test">Upload WAEC Reult</label>
+                <input type="file" accept="image/*" name="image" id="file" onchange="showPreview(event)" required>
+
+                <div class="btn-box">
+                    <button type="button" id="back3">BACK</button>
+                    <button type="submit" id="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- <section class="form-box">
+        <form action="#" method="post" id="form1">
+            <h3>APPLICANT INFORMATION</h3>
+            <input type="text" placeholder="First Name..." required>           
+            <input type="text" placeholder="Last Name..." required>
+            <input type="email" placeholder="Email..." required>
+            <input type="tel" placeholder="Phone Number...">
+            <input type="date">
+            <input type="number" name="age" placeholder="Your age...">
+
+            <div class="btn-box">
+                <button type="button" id="next1">NEXT</button>
+            </div>
+        </form>
+
+        <form action="#" method="post" id="form2">
+            <h3>APPLICANT INFORMATION</h3>
+            <select>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea name="Address" id="address" rows="7" placeholder="Your address"></textarea>
+            <input type="text" placeholder="Your city...">
+            <select>
+                <option value="abia">Abia</option>
+                <option value="adamawa">Adamawa</option>
+                <option value="akwaIbom">Akwa Ibom</option>
+                <option value="anambra">Anambra</option>
+                <option value="bauchi">Bauchi</option>
+                <option value="bayelsa">Bayelsa</option>
+                <option value="benue">Benue</option>
+                <option value="borno">Borno</option>
+                <option value="crossRiver">Cross River</option>
+                <option value="delta">Delta</option>
+                <option value="ebonyi">Ebonyi</option>
+                <option value="edo">Edo</option>
+                <option value="ekiti">Ekiti</option>
+                <option value="enugu">Enugu</option>
+                <option value="fct">FCT</option>
+                <option value="gombe">Gombe</option>
+                <option value="imo">Imo</option>
+                <option value="jigawa">Jigawa</option>
+                <option value="kaduna">Kaduna</option>
+                <option value="kano">Kano</option>
+                <option value="katsina">Katsina</option>
+                <option value="kebbi">Kebbi</option>
+                <option value="kogi">Kogi</option>
+                <option value="kwara">Kwara</option>
+                <option value="lagos">Lagos</option>
+                <option value="nasarawa">Nasarawa</option>
+                <option value="niger">Niger</option>
+                <option value="ogun">Ogun</option>
+                <option value="ondo">Ondo</option>
+                <option value="osun">Osun</option>
+                <option value="oyo">Oyo</option>
+                <option value="plateau">Plateau</option>
+                <option value="rivers">Rivers</option>
+                <option value="sokoto">Sokoto</option>
+                <option value="taraba">Taraba</option>
+                <option value="yobe">Yobe</option>
+                <option value="zamfara">Zamfara</option>
+            </select>
+            <input type="text" placeholder="Your country...">
+            <input type="text" placeholder="Place of birth...">
+
+            <div class="btn-box">
+                <button type="button" id="back1">BACK</button>
+                <button type="button" id="next2">NEXT</button>
+            </div>
+        </form>
+
+        <form action="#" method="post" id="form3">
+            <h3>PARENTAL INFORMATION</h3>
+            <input type="text" placeholder="Parent(s)/Guardian Name..." required>
+            <textarea name="Address" id="address" rows="7" placeholder="Your address"></textarea>
+            <input type="text" placeholder="Your city...">
+            <select>
+                <option value="abia">Abia</option>
+                <option value="adamawa">Adamawa</option>
+                <option value="akwaIbom">Akwa Ibom</option>
+                <option value="anambra">Anambra</option>
+                <option value="bauchi">Bauchi</option>
+                <option value="bayelsa">Bayelsa</option>
+                <option value="benue">Benue</option>
+                <option value="borno">Borno</option>
+                <option value="crossRiver">Cross River</option>
+                <option value="delta">Delta</option>
+                <option value="ebonyi">Ebonyi</option>
+                <option value="edo">Edo</option>
+                <option value="ekiti">Ekiti</option>
+                <option value="enugu">Enugu</option>
+                <option value="fct">FCT</option>
+                <option value="gombe">Gombe</option>
+                <option value="imo">Imo</option>
+                <option value="jigawa">Jigawa</option>
+                <option value="kaduna">Kaduna</option>
+                <option value="kano">Kano</option>
+                <option value="katsina">Katsina</option>
+                <option value="kebbi">Kebbi</option>
+                <option value="kogi">Kogi</option>
+                <option value="kwara">Kwara</option>
+                <option value="lagos">Lagos</option>
+                <option value="nasarawa">Nasarawa</option>
+                <option value="niger">Niger</option>
+                <option value="ogun">Ogun</option>
+                <option value="ondo">Ondo</option>
+                <option value="osun">Osun</option>
+                <option value="oyo">Oyo</option>
+                <option value="plateau">Plateau</option>
+                <option value="rivers">Rivers</option>
+                <option value="sokoto">Sokoto</option>
+                <option value="taraba">Taraba</option>
+                <option value="yobe">Yobe</option>
+                <option value="zamfara">Zamfara</option>
+            </select>
+            <input type="text" placeholder="Your country...">
+            <input type="text" placeholder="Place of birth...">
+
+            <div class="btn-box">
+                <button type="button" id="back2">BACK</button>
+                <button type="button" id="next3">NEXT</button>
+            </div>
+        </form>
+
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>STEP 1</small></div>
+            <div class="step-col"><small>STEP 2</small></div>
+            <div class="step-col"><small>STEP 3</small></div>
+            <div class="step-col"><small>STEP 4</small></div>
+            <div class="step-col"><small>Slide 3</small></div>
+        </div>
+    </section> -->
+
+    <hr>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident blanditiis fuga mollitia voluptatibus <br>asperiores doloribus ipsam molestiae aut architecto harum.</p>
+        <div class="social">
+            <img src="img/facebook.png" alt="">
+            <img src="img/twitter.png" alt="">
+            <img src="img/instagram.png" alt="">
+            <img src="img/linkedin.png" alt="">
+        </div>
+        <p>Work in progress...</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script src="main.js"></script>
+</body>
+</html>
