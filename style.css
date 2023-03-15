@@ -57,11 +57,8 @@ nav {
     align-items: center;
 }
 nav img {
-    width: 100px;
+    width: 120px;
 }
-/* nav .icon {
-    display: none;
-} */
 nav #bars {
     opacity: 0;
 }
@@ -552,7 +549,7 @@ form button {
     nav #bars {
         width: 35px;
         position: absolute;
-        top: 40px;
+        top: 50px;
         right: 40px;
         cursor: pointer;
         z-index: 300;
