@@ -278,7 +278,7 @@ nav #bars {
 
 /* Registration Page */
 .container {
-    min-width: 80%;
+    max-width: 50%;
     min-height: 100vh;
     margin: auto;
     /* background: linear-gradient(62deg, #FBAB7E, #F7CE68); */
@@ -548,9 +548,9 @@ form button {
     }
     nav #bars {
         width: 35px;
-        position: fixed;
-        top: 50px;
-        right: 30px;
+        position: relative;
+        top: 2%;
+        right: 3%;
         cursor: pointer;
         z-index: 300;
         opacity: 1;
@@ -602,7 +602,7 @@ form button {
     .nav-links ul li a:hover {
         /* color: #FBAB7E; */
         color: #efe;
-        font-weight: 800;
+        font-weight: 900;
     }
     .row {
         flex-direction: column;
