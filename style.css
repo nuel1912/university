@@ -572,7 +572,7 @@ form button {
     }
     .nav-links.open {
         width: 100%;
-        height: 50vh;
+        height: 100vh;
         border-bottom-left-radius: 0;
     }
     .nav-links.open ul li {
