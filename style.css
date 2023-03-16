@@ -279,7 +279,7 @@ nav #bars {
 /* Registration Page */
 .container {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(62deg, #FBAB7E, #F7CE68);
     position: relative;
     overflow: hidden;
