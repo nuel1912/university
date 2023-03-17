@@ -27,7 +27,7 @@ hr {
     background-position: center;
     background-size: cover;
     position: relative;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 .sub-header {
     height: 50vh;
