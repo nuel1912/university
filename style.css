@@ -36,9 +36,6 @@ hr {
     background-position: center;
     background-size: cover;
     position: relative;
-    overflow: hidden;
-    /* text-align: center;
-    color: #fff; */
 }
 .sub-header h1 {
     width: 90%;
@@ -82,27 +79,15 @@ nav #bars {
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 2px;
-    padding: 5px 0;
+    padding: 5px 3px;
     border-radius: 50px;
     transition: 1s;
 }
 .nav-links ul li a:hover {
-    padding: 3px 10px;
+    padding: 5px 12px;
     color: #5c1600;
     background: linear-gradient(62deg, #FBAB7E, #F7CE68);
 }
-/* .nav-links ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: linear-gradient(62deg, #FBAB7E, #F7CE68);
-    display: block;
-    margin-top: 5px;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after {
-    width: 100%;
-} */
 .text-box {
     width: 90%;
     color: #fff;
@@ -138,6 +123,7 @@ nav #bars {
     background: #5c1600;
     transition: 1s;
 }
+
 
 /* Programmes */
 .programmes {
@@ -182,6 +168,7 @@ nav #bars {
 .pro-col:hover {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 }
+
 
 /* Faculty */
 .faculty {
@@ -240,6 +227,7 @@ nav #bars {
     opacity: 1;
 }
 
+
 /* Footer */
 .footer {
     color: #efe;
@@ -261,6 +249,7 @@ nav #bars {
     cursor: pointer;
     padding: 15px 0;
 }
+
 
 /* About Us */
 .about {
@@ -289,6 +278,7 @@ nav #bars {
     text-align: center;
 }
 
+
 /* Registration Page */
 .container {
     display: flex;
@@ -296,7 +286,6 @@ nav #bars {
     justify-content: center;
     align-items: center;
 }
-
 .sub-container {
     width: 100%;
     max-width: 650px;
@@ -305,7 +294,6 @@ nav #bars {
     margin: 0 30px;
     border-radius: 10px;
 }
-
 .title {
     font-size: 25px;
     font-weight: 600;
@@ -314,25 +302,21 @@ nav #bars {
     color: #fff;
     border-bottom: 1px solid #fff;
 }
-
 .part1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0;
 }
-
 .input-box:nth-child(2n) {
     justify-content: end;
 }
-
 .input-box {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     padding-bottom: 15px;
 }
-
 .input-box input, .input-box select, .input-box textarea {
     height: 40px;
     width: 95%;
@@ -342,16 +326,13 @@ nav #bars {
     border: none;
     outline: none;
 }
-
 .btn-box {
     display: block;
     width: 100%;
     margin: 10px 5px;
     padding: 10px;
-    color: #d6d6d6;
     background: transparent;
     border-radius: 5px;
-    border: 1px solid #d6d6d6;
     outline: none;
     cursor: pointer;
 }
@@ -429,6 +410,9 @@ nav #bars {
         z-index: 300;
         opacity: 1;
     }
+    nav img {
+        width: 90px;
+    }
     .nav-links {
         width: 0;
         height: 0;
@@ -472,11 +456,6 @@ nav #bars {
         display: inline-block;
         position: relative;
         transition: 1s;
-    }
-    .nav-links ul li a:hover {
-        /* color: #FBAB7E; */
-        color: #efe;
-        font-weight: 900;
     }
     .row {
         flex-direction: column;
@@ -539,4 +518,3 @@ nav #bars {
     nav .close {
         position: fixed;
     } */
-}
