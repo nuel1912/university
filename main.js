@@ -192,3 +192,12 @@ var progress4 = document.getElementById("progress4");
             preview.style.display = "block";
         }
     }
+
+    function showPreview2(event2) {
+        if (event2.target.files.length > 0) {
+            var src1 = URL.createObjectURL(event2.target.files[0]);
+            var preview2 = document.getElementById("dummy2");
+            preview2.src = src1;
+            preview2.style.display = "block";
+        }
+    }

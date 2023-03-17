@@ -29,97 +29,96 @@
 
     <!-- Registration Field -->
     <section class="container">
-        <div class="form-box"  id="form1">
-            <div class="step-row">
-                <div id="progress1"></div>
-                <div class="step-col"><small>STEP 1</small></div>
-                <div class="step-col"><small>STEP 2</small></div>
-                <div class="step-col"><small>STEP 3</small></div>
-                <div class="step-col"><small>STEP 4</small></div>
-            </div>
-            <h3>Applicant Information</h3>
-            <form action="#" method="post">
-                <input type="text" id="first1" placeholder="First Name..." required>           
-                <input type="text" id="last1" placeholder="Last Name..." required>
-                <input type="email" id="email1" placeholder="Email..." required>
-                <input type="tel" id="no1" placeholder="Phone Number...">
-                <input type="date" id="date">
-                <input type="number" name="age" id="age" placeholder="Your age...">
-    
-                <div class="btn-box">
-                    <button type="button" id="next1" onclick="return validate()">NEXT</button>
+        <section class="sub-container">
+        <h1 class="title">Applicant Information</h1>
+        <form action="#">
+            <div class="part1">
+                <div class="input-box">
+                    <input type="text" id="first1" name="first1" placeholder="Enter first name...">
                 </div>
-            </form>
-        </div>
-
-        <div class="form-box"  id="form2">
-            <div class="step-row">
-                <div id="progress2"></div>
-                <div class="step-col"><small>STEP 1</small></div>
-                <div class="step-col"><small>STEP 2</small></div>
-                <div class="step-col"><small>STEP 3</small></div>
-                <div class="step-col"><small>STEP 4</small></div>
-            </div>
-            <h3>Applicant Information</h3>
-            <form action="#" method="post">
-                <select id="gender" required>
-                    <option value="" disabled selected hidden>--select gender--</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-                <textarea name="Address" id="add" rows="2" placeholder="Your address"></textarea>
-                <input type="text" id="city" placeholder="Your city...">
-                <select id="state" required>
-                    <option value="" disabled selected hidden>--select your state--</option>
-                    <option value="abia">Abia</option>
-                    <option value="adamawa">Adamawa</option>
-                    <option value="akwaIbom">Akwa Ibom</option>
-                    <option value="anambra">Anambra</option>
-                    <option value="bauchi">Bauchi</option>
-                    <option value="bayelsa">Bayelsa</option>
-                    <option value="benue">Benue</option>
-                    <option value="borno">Borno</option>
-                    <option value="crossRiver">Cross River</option>
-                    <option value="delta">Delta</option>
-                    <option value="ebonyi">Ebonyi</option>
-                    <option value="edo">Edo</option>
-                    <option value="ekiti">Ekiti</option>
-                    <option value="enugu">Enugu</option>
-                    <option value="fct">FCT</option>
-                    <option value="gombe">Gombe</option>
-                    <option value="imo">Imo</option>
-                    <option value="jigawa">Jigawa</option>
-                    <option value="kaduna">Kaduna</option>
-                    <option value="kano">Kano</option>
-                    <option value="katsina">Katsina</option>
-                    <option value="kebbi">Kebbi</option>
-                    <option value="kogi">Kogi</option>
-                    <option value="kwara">Kwara</option>
-                    <option value="lagos">Lagos</option>
-                    <option value="nasarawa">Nasarawa</option>
-                    <option value="niger">Niger</option>
-                    <option value="ogun">Ogun</option>
-                    <option value="ondo">Ondo</option>
-                    <option value="osun">Osun</option>
-                    <option value="oyo">Oyo</option>
-                    <option value="plateau">Plateau</option>
-                    <option value="rivers">Rivers</option>
-                    <option value="sokoto">Sokoto</option>
-                    <option value="taraba">Taraba</option>
-                    <option value="yobe">Yobe</option>
-                    <option value="zamfara">Zamfara</option>
-                </select>
-                <input type="text" id="country" placeholder="Your country..." required>
-                <input type="text" id="pob" placeholder="Place of birth...">
-
-                <div class="btn-box">
-                    <button type="button" id="back1">BACK</button>
-                    <button type="button" id="next2" onclick="return validate2()">NEXT</button>
+                <div class="input-box">
+                    <input type="text" id="last1" name="last1" placeholder="Enter last name...">
                 </div>
-            </form>
-        </div>
+                <div class="input-box">
+                    <input type="tel" id="no1" name="no1" placeholder="Enter phone number...">
+                </div>
+                <div class="input-box">
+                    <input type="date" id="dob" name="dob" placeholder="Enter date of birth...">
+                </div>
+                <div class="input-box">
+                    <input type="number" id="age" name="age" placeholder="Enter your age...">
+                </div>
+                <div class="input-box">
+                    <select id="gender" required>
+                        <option value="" disabled selected hidden>--select gender--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <textarea name="Address" id="add" rows="2" placeholder="Your address"></textarea>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="city" placeholder="Your city...">
+                </div>
+                <div class="input-box">
+                    <select id="state" required>
+                        <option value="" disabled selected hidden>--select your state--</option>
+                        <option value="abia">Abia</option>
+                        <option value="adamawa">Adamawa</option>
+                        <option value="akwaIbom">Akwa Ibom</option>
+                        <option value="anambra">Anambra</option>
+                        <option value="bauchi">Bauchi</option>
+                        <option value="bayelsa">Bayelsa</option>
+                        <option value="benue">Benue</option>
+                        <option value="borno">Borno</option>
+                        <option value="crossRiver">Cross River</option>
+                        <option value="delta">Delta</option>
+                        <option value="ebonyi">Ebonyi</option>
+                        <option value="edo">Edo</option>
+                        <option value="ekiti">Ekiti</option>
+                        <option value="enugu">Enugu</option>
+                        <option value="fct">FCT</option>
+                        <option value="gombe">Gombe</option>
+                        <option value="imo">Imo</option>
+                        <option value="jigawa">Jigawa</option>
+                        <option value="kaduna">Kaduna</option>
+                        <option value="kano">Kano</option>
+                        <option value="katsina">Katsina</option>
+                        <option value="kebbi">Kebbi</option>
+                        <option value="kogi">Kogi</option>
+                        <option value="kwara">Kwara</option>
+                        <option value="lagos">Lagos</option>
+                        <option value="nasarawa">Nasarawa</option>
+                        <option value="niger">Niger</option>
+                        <option value="ogun">Ogun</option>
+                        <option value="ondo">Ondo</option>
+                        <option value="osun">Osun</option>
+                        <option value="oyo">Oyo</option>
+                        <option value="plateau">Plateau</option>
+                        <option value="rivers">Rivers</option>
+                        <option value="sokoto">Sokoto</option>
+                        <option value="taraba">Taraba</option>
+                        <option value="yobe">Yobe</option>
+                        <option value="zamfara">Zamfara</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="country" placeholder="Your country..." required>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="pob" placeholder="Place of birth...">
+                </div>
+            </div>
+            
+            <div>
+                <button type="button" id="next1" class="hero-btn btn-box">NEXT</button>
+            </div>
+        </form>
+        </section>
+    </section>
         
-        <div class="form-box"  id="form3">
+        <!-- <div class="form-box"  id="form3">
             <div class="step-row">
                 <div id="progress3"></div>
                 <div class="step-col"><small>STEP 1</small></div>
@@ -196,15 +195,20 @@
                     <img src="" alt="" id="dummy">
                 </div>
                 <label for="file" class="test">Upload WAEC Reult</label>
-                <input type="file" accept="image/*" name="image" id="file" onchange="showPreview(event)" required>
+                <input type="file" accept="image/*" name="image" id="file" onchange="showPreview(event)">
+
+                <div class="preview2">
+                    <img src="" alt="" id="dummy2">
+                </div>
+                <label for="file" class="test">Upload NECO Reult</label>
+                <input type="file" accept="image/*" name="image" id="file2" onchange="showPreview2(event2)">
 
                 <div class="btn-box">
                     <button type="button" id="back3">BACK</button>
                     <button type="submit" id="submit">SUBMIT</button>
                 </div>
             </form>
-        </div>
-    </section>
+        </div> -->
 
     <!-- <section class="form-box">
         <form action="#" method="post" id="form1">
