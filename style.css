@@ -118,7 +118,7 @@ nav #bars {
     cursor: pointer;
 }
 .hero-btn:hover {
-    font-weight: 600;
+    font-weight: 700;
     border: 0;
     background: #5c1600;
     transition: 1s;
@@ -293,6 +293,9 @@ nav #bars {
     padding: 30px;
     margin: 0 30px;
     border-radius: 10px;
+}
+#move2 {
+    display: none;
 }
 .title {
     font-size: 25px;
