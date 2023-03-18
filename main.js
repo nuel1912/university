@@ -12,93 +12,99 @@ bars.onclick = function () {
     }
 }
 
-var move1 = document.getElementById("move1");
-var move2 = document.getElementById("move2");
+// var move1 = document.getElementById("move1");
+// var move2 = document.getElementById("move2");
 
-var next1 = document.getElementById("next1");
-var next2 = document.getElementById("next2");
-var back1 = document.getElementById("back1");
+// var next1 = document.getElementById("next1");
+// var next2 = document.getElementById("next2");
+// var back1 = document.getElementById("back1");
 
-var first1 = document.getElementById("first1");
-var last1 = document.getElementById("last1");
-var email1 = document.getElementById("email1");
-var no1 = document.getElementById("no1");
-var date = document.getElementById("dob");
-var age = document.getElementById("age");
-var gender = document.getElementById("gender");
-var add = document.getElementById("add");
-var city = document.getElementById("city");
-var state = document.getElementById("state");
-var country = document.getElementById("country");
-var pob = document.getElementById("pob");
+// var first1 = document.getElementById("first1");
+// var last1 = document.getElementById("last1");
+// var email1 = document.getElementById("email1");
+// var no1 = document.getElementById("no1");
+// var date = document.getElementById("dob");
+// var age = document.getElementById("age");
+// var gender = document.getElementById("gender");
+// var add = document.getElementById("add");
+// var city = document.getElementById("city");
+// var state = document.getElementById("state");
+// var country = document.getElementById("country");
+// var pob = document.getElementById("pob");
+
+// next1.onclick = function() {
+//     if (first1.value == "") {
+//         window.alert("Please your first name...");
+//         first1.focus();
+//         return false;
+//     }
+//     else if (last1.value == "") {
+//         window.alert("Please your last name...");
+//         last1.focus();
+//         return false;
+//     }
+//     else if (email1.value == "") {
+//         window.alert("Please your email...");
+//         email1.focus();
+//         return false;
+//     }
+//     else if (no1.value == "") {
+//         window.alert("Please your phone number...");
+//         no1.focus();
+//         return false;
+//     }
+//     else if (date.value == "") {
+//         window.alert("Please your date of birth...");
+//         date.focus();
+//         return false;
+//     }
+//     else if (age.value == "") {
+//         window.alert("Please your age...");
+//         age.focus();
+//         return false;
+//     }
+//     else if (gender.value == "") {
+//         window.alert("Please your gender...");
+//         gender.focus();
+//         return false;
+//     }
+//     else if (add.value == "") {
+//         window.alert("Please your address...");
+//         add.focus();
+//         return false;
+//     }
+//     else if (city.value == "") {
+//         window.alert("Please your city...");
+//         city.focus();
+//         return false;
+//     }
+//     else if (state.value == "") {
+//         window.alert("Please your state...");
+//         state.focus();
+//         return false;
+//     }
+//     else if (country.value == "") {
+//         window.alert("Please your country...");
+//         country.focus();
+//         return false;
+//     }
+//     else if (pob.value == "") {
+//         window.alert("Please your place of birth...");
+//         pob.focus();
+//         return false;
+//     }
+//     else {
+//         move1.style.display = "none";
+//         move1.style.transition = "1s";
+//         move2.style.display = "block";
+//         return true;
+//     }
+// }
 
 next1.onclick = function() {
-    if (first1.value == "") {
-        window.alert("Please your first name...");
-        first1.focus();
-        return false;
-    }
-    else if (last1.value == "") {
-        window.alert("Please your last name...");
-        last1.focus();
-        return false;
-    }
-    else if (email1.value == "") {
-        window.alert("Please your email...");
-        email1.focus();
-        return false;
-    }
-    else if (no1.value == "") {
-        window.alert("Please your phone number...");
-        no1.focus();
-        return false;
-    }
-    else if (date.value == "") {
-        window.alert("Please your date of birth...");
-        date.focus();
-        return false;
-    }
-    else if (age.value == "") {
-        window.alert("Please your age...");
-        age.focus();
-        return false;
-    }
-    else if (gender.value == "") {
-        window.alert("Please your gender...");
-        gender.focus();
-        return false;
-    }
-    else if (add.value == "") {
-        window.alert("Please your address...");
-        add.focus();
-        return false;
-    }
-    else if (city.value == "") {
-        window.alert("Please your city...");
-        city.focus();
-        return false;
-    }
-    else if (state.value == "") {
-        window.alert("Please your state...");
-        state.focus();
-        return false;
-    }
-    else if (country.value == "") {
-        window.alert("Please your country...");
-        country.focus();
-        return false;
-    }
-    else if (pob.value == "") {
-        window.alert("Please your place of birth...");
-        pob.focus();
-        return false;
-    }
-    else {
-        move1.style.display = "none";
-        move1.style.transition = "1s";
-        move2.style.display = "block";
-        return true;
-    }
+    move1.style.display = "none";
+    move1.style.transition = "1s";
+    move2.style.display = "block";
 }
 
 back1.onclick = function() {
